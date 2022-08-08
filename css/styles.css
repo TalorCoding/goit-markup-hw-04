@@ -142,10 +142,17 @@ color: var(--text-color);
     color: var(--accent-color);
 }
 
+.header-icon {
+    fill: #757575;
+}
 
 .hero {
-    background: var(--background-color);
+    background-color: var(--background-color);
+    background-image:linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)) ,
+    url(../images/hero-img.jpg);
     padding: 200px 0px 200px;
+    max-width: 1600px;
+    margin: 0 auto;
 }
 
 
@@ -285,11 +292,6 @@ letter-spacing: 0.03em;
     box-shadow: 1px 2px 5px gray;
 }
 
-.section-3-list-item {
-    
-    }
-
-
 
 .section-3-text {
 font-weight: 400;
@@ -299,6 +301,7 @@ text-align: center;
 letter-spacing: 0.03em;
 color: var(--text-color);
 margin-top: 10px;
+margin-bottom: 16px;
 
 }
 
@@ -306,6 +309,75 @@ margin-top: 10px;
     padding-top: 30px;
     padding-bottom: 30px;
 }
+
+.section-3-soc {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.section-3-soc-link {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.section-3-soc-icon{
+    fill: #AFB1B8;
+}
+
+.section-3-soc-link:hover, .section-3-soc-link:focus {
+    background-color: #2196F3;
+}
+
+
+.section-3-soc-link:hover .section-3-soc-icon,
+.section-3-soc-link:focus .section-3-soc-icon {
+    fill: #FFFFFF;
+}
+
+.section-4-title {
+    font-weight: 700;
+font-size: 36px;
+line-height: 42px;
+text-align: center;
+letter-spacing: 0.03em;
+
+color: #212121;
+margin-bottom: 50px;
+}
+
+.section-4-list {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.section-4-list-item:focus {
+    fill: #2196F3;
+    border: 1.5px solid #2196F3;
+}
+
+.section-4-icon {
+    fill: #AFB1B8;
+    border: 1.5px solid #AFB1B8;
+    border-radius: 5px;
+}
+
+.section-4-icon:hover {
+    fill: #2196F3;
+    border: 1.5px solid #2196F3;
+}
+
+.section-4-link:hover .section-4-icon,
+.section-4-link:focus .section-4-icon {
+    fill: #2196F3;
+    border: 1.5px solid #2196F3;
+}
+
 
 .portfolio {
     background-color: var(--main-light-color);
