@@ -157,6 +157,9 @@ line-height: 1.14;
 letter-spacing: 0.02em;
 color: var(--text-color);
 order: 0;
+display: flex;
+justify-content: center;
+align-items: center;
 }
 
 
@@ -181,6 +184,9 @@ order: 0;
     line-height: 1.14;
     letter-spacing: 0.02em;
     color: var(--text-color);
+    display: flex;
+justify-content: center;
+align-items: center;
     }
     
     
@@ -194,7 +200,7 @@ order: 0;
     margin-right: 10px;
     }
     
-    .header-tel :focus .header-tel-icon,
+    .header-list-2 :focus .header-tel-icon,
     .header-list-2 :hover .header-tel-icon {
         fill: #2196F3;
     }
@@ -244,19 +250,9 @@ min-height: 50px;
 border: none;
 border-radius: 5px;
 margin-top: 30px;
-
-}
-
-
-
-.hero-btn:focus {
-    background-color: var(--accent-color);
+background-color: var(--accent-color);
     color: var(--main-light-color);
-}
 
-.hero-btn:hover {
-    background-color: var(--accent-color);
-    color: var(--main-light-color);
 }
 
 
@@ -415,28 +411,22 @@ margin-bottom: 50px;
     gap: 30px;
 }
 
-.section-4-list-item:focus {
-    fill: #2196F3;
-    border: 1.5px solid #2196F3;
-}
 
-.section-4-icon {
+.section-4-link {
     fill: #AFB1B8;
     border: 1.5px solid #AFB1B8;
     border-radius: 5px;
+    width: 170px;
+    height: 92px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-.section-4-icon:hover {
-    fill: #2196F3;
+.section-4-link:hover, .section-4-link:focus {
     border: 1.5px solid #2196F3;
-}
-
-.section-4-link:hover .section-4-icon,
-.section-4-link:focus .section-4-icon {
     fill: #2196F3;
-    border: 1.5px solid #2196F3;
 }
-
 
 .portfolio {
     background-color: var(--main-light-color);
@@ -509,7 +499,7 @@ border-bottom: 1px solid #EEEEEE;*/
 .card-list {
     display: flex;
     flex-wrap: wrap;
-    gap: 25px;
+    gap: 30px;
    
 }
 
